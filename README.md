@@ -1,47 +1,30 @@
-# Enkupanet — Corporate Website (Static Prototype)
+# Enkupanet website
 
-A premium, responsive English / Simplified Chinese website for **Enkupanet Agro Trading One Member PLC**, based on its 2026 company profile.
+A bilingual, static website for Enkupanet Agro Trading One Member PLC, based on the supplied 2026 company profile. The public preview is at [GitHub Pages](https://yohannesmulugeta.github.io/Enkupanet/).
 
-## How to preview
+## Preview and publish
 
-1. **Quickest:** open `index.html` in Chrome, Edge, Firefox, or Safari.
-2. **Local server (optional):** in this folder run `python -m http.server 4173` and open http://localhost:4173 .
+Run the static generator, then serve its output:
 
-There is no build process, package manager, CMS, backend, form, or external dependency. GitHub Actions deploys the static files to GitHub Pages.
+```powershell
+node scripts/build-site.mjs
+python -m http.server 4173 --bind 127.0.0.1 --directory _site
+```
 
-## Files
+Open `http://127.0.0.1:4173/`. GitHub Actions runs the same generator on pushes to `main` and deploys `_site` to GitHub Pages. Node.js is needed only to generate the pages; the published site uses plain HTML, CSS and JavaScript without a CMS, backend, form or runtime package dependency.
 
-- `index.html` — semantic page sections and product detail dialog
-- `styles.css` — brand styling, layouts, animations, mobile breakpoints
-- `premium.css` — editorial layout, origin explorer, mobile product rail and sourcing journey
-- `app.js` — language switcher, catalog filtering, product details
-- `robots.txt` and `sitemap.xml` — public discovery for English and Chinese URLs
-- `assets/` — brand mark and optimized product images extracted from the supplied profile
+## Structure and content
 
-## Website features
+- `index.html`, `styles.css`, `premium.css`, and `app.js` form the homepage and its interactive catalog, origin view and sourcing journey.
+- `site-data.js` holds the nine product records, bilingual copy and inquiry email text shared by the browser and generator. Change product facts there, then rebuild.
+- `scripts/build-site.mjs` generates English and Chinese homepages plus 18 product pages. The generated `_site` folder is ignored by Git.
+- `product.css` styles the product pages and comparison tables. Comparisons show only specifications present in the company profile; absent values are labeled as such.
+- `assets/` contains the brand mark, product photographs and an illustrative Ethiopia outline. `sitemap.xml` and `robots.txt` support discovery.
 
-- English / Simplified Chinese switcher (language selectable using `?lang=zh`)
-- Four commodity categories
-- Nine products / product groups with details from the profile
-- Mobile navigation and responsive layouts
-- Company introduction, coffee origins, six-stage quality approach
-- Simple published company email and telephone in footer; no contact form
-- Shareable product details using `?product=humera` (and `?lang=zh` for Chinese)
-- Illustrative, keyboard-accessible Ethiopian coffee origin locator
-- Scroll-guided six-stage sourcing journey and touch-friendly mobile product discovery
+Each product has a direct English URL such as `/products/humera/` and a Chinese URL such as `/zh/products/humera/`. Homepage cards open a quick view when JavaScript is available; their links lead to the full pages for direct visits, modified clicks and visitors without JavaScript. Older `?product=` and `?lang=zh` URLs redirect in the browser to the static pages.
 
-## Source accuracy
+## Source notes
 
-Copy and numeric specifications were adapted from the user-supplied `Enkupanet_Premium_Bilingual_Profile_2026.pdf`. Confirm specifications and official contact details before publication. Red kidney, green mung, and speckled kidney bean images were generated for this website and optimized as separate card and detail WebP assets. The remaining illustrative photography originates in the supplied profile. Photo credits are disclosed in the footer (original profile page 20). The brand icon is a web-optimized extraction from the profile cover.
+Product copy and numeric specifications were adapted from `Enkupanet_Premium_Bilingual_Profile_2026.pdf`. The owner should reconfirm specifications, availability, terms and contact details for current trading. Red kidney, green mung and speckled kidney bean images were generated for this website; remaining illustrative photography comes from the supplied profile. Credits are disclosed in the footer. The brand icon was extracted from the profile cover.
 
-The Ethiopia outline in `assets/ethiopia-outline.svg` is simplified from [Natural Earth 1:110m Admin 0 countries](https://www.naturalearthdata.com/about/terms-of-use/) (public domain). Origin markers are approximate regional orientations only, not farm or current lot locations. Product detail metadata is updated in the browser for deep links; social platforms that do not run JavaScript may show the general site preview.
-
-## GitHub repository and preview publishing
-
-- Repository: https://github.com/yohannesmulugeta/Enkupanet
-- All source files live in the `main` branch.
-- To activate the GitHub Pages preview, open **Settings → Pages → Build and deployment** and select **GitHub Actions** as the source.
-- Next, open **Actions → Deploy Enkupanet Website → Run workflow** (or re-run the previously failed workflow).
-- Once deployment succeeds, the preview will be available at `https://yohannesmulugeta.github.io/Enkupanet/`.
-
-This is a static prototype/preview. Use hosting suitable for a commercial business before treating it as a production company website.
+The Ethiopia outline in `assets/ethiopia-outline.svg` is simplified from [Natural Earth 1:110m Admin 0 countries](https://www.naturalearthdata.com/about/terms-of-use/) (public domain). Origin markers give approximate regional orientation and do not identify farms or current lots.
