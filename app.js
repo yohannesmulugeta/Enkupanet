@@ -7,10 +7,10 @@ const copy = {
     catSesameTag:'OILSEEDS / 油料作物',catSesame:'Sesame Seeds',catSesameDesc:'Humera · Wollega',catCoffeeTag:'ETHIOPIAN ARABICA / 生咖啡豆',catCoffee:'Green Coffee',catCoffeeDesc:'Distinctive origins',catPulsesTag:'BEANS & PULSES / 豆类',catPulses:'Pulses & Beans',catPulsesDesc:'A diverse selection',catFrankTag:'NATURAL RESIN / 天然乳香',catFrank:'Frankincense',catFrankDesc:'Ethiopian olibanum',
     catalogueEyebrow:'EXPLORE IN DETAIL',catalogueHeading:'The product<br><em>selection.</em>',catalogueDesc:'A closer look at our commodities, varieties and product specifications. Select a product to learn more.',filterAll:'All products',filterSesame:'Sesame',filterCoffee:'Coffee',filterPulses:'Pulses',filterFrank:'Frankincense',detailButton:'VIEW DETAILS',catalogueHelpHeading:'Have a specific product requirement?',catalogueHelpText:'Tell us the product, preferred grade or specifications, destination and approximate quantity. Availability and terms are confirmed per inquiry.',catalogueHelpCta:'Email your requirements',partnerCta:'Start a sourcing conversation',footerContactIntro:'For products, specifications and sourcing inquiries, contact our team.',inquiryButton:'Request this product',inquiryNote:'Opens your email app with the product identified. Availability and terms are confirmed by the team.',menuOpen:'Open menu',menuClose:'Close menu',
     storyEyebrow:'02 / OUR COMPANY',storyHeading:'Rooted in<br><em>Ethiopian</em><br>agriculture.',storyDescription:'Enkupanet Agro Trading One Member PLC is an Ethiopia-based agricultural trading and export company focused on sourcing and supplying Ethiopian-origin commodities to international buyers.',valueOrigin:'Origin.',valueQuality:'Quality.',valuePartner:'Partnership.',
-    coffeeEyebrow:'ETHIOPIAN ARABICA',coffeeHeading:'Many origins.<br><em>One Ethiopia.</em>',coffeeText:'Green coffee can be selected by origin, processing method, grade and buyer requirements. Explore the origins featured in our collection.',washed:'WASHED / 水洗',natural:'NATURAL / 日晒',originLabel:'COFFEE ORIGINS',
+    coffeeEyebrow:'ETHIOPIAN ARABICA',coffeeHeading:'Many origins.<br><em>One Ethiopia.</em>',coffeeText:'Green coffee can be selected by origin, processing method, grade and buyer requirements. Explore the origins featured in our collection.',washed:'WASHED / 水洗',natural:'NATURAL / 日晒',originLabel:'COFFEE ORIGINS',originDisclaimer:'Illustrative regional orientation only; markers do not identify farms or current lots.',originSelected:'Selected origin',
     approachEyebrow:'03 / OUR APPROACH',approachHeading:'Quality, through<br><em>the process.</em>',approachDesc:'From sourcing the right product to preparing its shipment, our coordination follows the agreed requirements of each buyer and commodity.',
     partnerEyebrow:'04 / GLOBAL PARTNERSHIPS',partnerHeading:'From Ethiopia.<br><em>For the world.</em>',partnerDesc:'We welcome importers, processors, traders and food-industry buyers to discuss trial orders, regular supply programmes and longer-term sourcing cooperation.',partnerAccent:"LET'S BUILD THE RIGHT SUPPLY CONVERSATION.",
-    footerHeading:'Good partnerships<br><em>begin here.</em>',footerProducts:'SESAME · COFFEE · PULSES · FRANKINCENSE',backToTop:'BACK TO TOP ↑',credits:'Image credits',specHeading:'PRODUCT DETAILS',specNote:'Specifications are presented from the 2026 company profile; confirm applicable lot requirements before trading.',categories:{sesame:'SESAME SEEDS',coffee:'GREEN COFFEE',pulses:'PULSES & BEANS',frankincense:'FRANKINCENSE'},
+    footerHeading:'Good partnerships<br><em>begin here.</em>',footerProducts:'SESAME · COFFEE · PULSES · FRANKINCENSE',backToTop:'BACK TO TOP ↑',credits:'Image credits',specHeading:'PRODUCT DETAILS',specNote:'Specifications are presented from the 2026 company profile; confirm applicable lot requirements before trading.',shareProduct:'Copy product link',linkCopied:'Link copied',swipeHint:'Swipe to explore products',previousProducts:'Previous products',nextProducts:'Next products',productCount:'products shown',categories:{sesame:'SESAME SEEDS',coffee:'GREEN COFFEE',pulses:'PULSES & BEANS',frankincense:'FRANKINCENSE'},
     steps:[['Source selection','选择供应源','Connect suitable origins and suppliers with product requirements.'],['Product inspection','产品检验','Review products against the agreed requirements.'],['Cleaning & grading','清选与分级','Coordinate cleaning and grading where applicable.'],['Sample checks','样品检查','Review samples against the agreed specification.'],['Pre-loading review','装运前审核','Check shipment preparation before loading.'],['Shipment records','装运记录','Coordinate the records related to shipment.']]
   },
   zh: {
@@ -20,10 +20,10 @@ const copy = {
     catSesameTag:'油料作物 / OILSEEDS',catSesame:'芝麻',catSesameDesc:'哈默拉 · 沃莱加',catCoffeeTag:'阿拉比卡咖啡 / ARABICA',catCoffee:'生咖啡豆',catCoffeeDesc:'多样化的特色产区',catPulsesTag:'豆类产品 / PULSES',catPulses:'豆类',catPulsesDesc:'丰富的品种选择',catFrankTag:'天然树脂 / NATURAL RESIN',catFrank:'天然乳香',catFrankDesc:'埃塞俄比亚乳香',
     catalogueEyebrow:'详细了解产品',catalogueHeading:'精选<br><em>农产品组合。</em>',catalogueDesc:'了解产品品种、特色和技术指标。点击产品可查看详细信息。',filterAll:'全部产品',filterSesame:'芝麻',filterCoffee:'咖啡',filterPulses:'豆类',filterFrank:'乳香',detailButton:'查看详情',catalogueHelpHeading:'您有具体的采购需求吗？',catalogueHelpText:'请告知所需产品、等级或规格、目的地及预计采购数量。供货情况与交易条款以具体询价确认为准。',catalogueHelpCta:'发送采购需求',partnerCta:'开启采购洽谈',footerContactIntro:'如需了解产品、技术指标或采购合作事宜，请联系我们。',inquiryButton:'询价此产品',inquiryNote:'将打开电子邮件并预填产品名称；供货情况及条款需进一步确认。',menuOpen:'打开菜单',menuClose:'关闭菜单',
     storyEyebrow:'02 / 公司概况',storyHeading:'立足<br><em>埃塞俄比亚</em><br>农业。',storyDescription:'Enkupanet Agro Trading One Member PLC 是一家立足埃塞俄比亚的农产品贸易与出口企业，专注于采购并向国际买家供应埃塞俄比亚原产农产品。',valueOrigin:'原产地。',valueQuality:'品质。',valuePartner:'合作。',
-    coffeeEyebrow:'埃塞俄比亚阿拉比卡咖啡',coffeeHeading:'多样产区，<br><em>源于埃塞俄比亚。</em>',coffeeText:'根据产区、加工方式、等级及买方要求选择生咖啡豆。探索我们的产品组合所涵盖的咖啡产区。',washed:'水洗 / WASHED',natural:'日晒 / NATURAL',originLabel:'咖啡产区',
+    coffeeEyebrow:'埃塞俄比亚阿拉比卡咖啡',coffeeHeading:'多样产区，<br><em>源于埃塞俄比亚。</em>',coffeeText:'根据产区、加工方式、等级及买方要求选择生咖啡豆。探索我们的产品组合所涵盖的咖啡产区。',washed:'水洗 / WASHED',natural:'日晒 / NATURAL',originLabel:'咖啡产区',originDisclaimer:'仅供了解产区的大致方位；标记不代表具体农场或当前批次。',originSelected:'当前产区',
     approachEyebrow:'03 / 合作方式',approachHeading:'质量管理，<br><em>贯穿全过程。</em>',approachDesc:'从选择货源到安排装运，我们根据各类产品及买方约定的要求协调相关环节。',
     partnerEyebrow:'04 / 国际合作',partnerHeading:'源自埃塞俄比亚，<br><em>连接全球。</em>',partnerDesc:'欢迎进口商、加工企业、贸易商及食品行业买家，就试单、持续供应计划及长期采购合作开展洽谈。',partnerAccent:'让合作从需求开始。',
-    footerHeading:'优质合作，<br><em>从此开始。</em>',footerProducts:'芝麻 · 咖啡 · 豆类 · 乳香',backToTop:'返回顶部 ↑',credits:'图片来源',specHeading:'产品指标',specNote:'相关技术指标源自2026年公司简介，具体交易批次的要求应另行确认。',categories:{sesame:'芝麻',coffee:'生咖啡豆',pulses:'豆类产品',frankincense:'天然乳香'},
+    footerHeading:'优质合作，<br><em>从此开始。</em>',footerProducts:'芝麻 · 咖啡 · 豆类 · 乳香',backToTop:'返回顶部 ↑',credits:'图片来源',specHeading:'产品指标',specNote:'相关技术指标源自2026年公司简介，具体交易批次的要求应另行确认。',shareProduct:'复制产品链接',linkCopied:'链接已复制',swipeHint:'左右滑动，探索产品',previousProducts:'上一组产品',nextProducts:'下一组产品',productCount:'件产品',categories:{sesame:'芝麻',coffee:'生咖啡豆',pulses:'豆类产品',frankincense:'天然乳香'},
     steps:[['选择供应源','Source selection','根据产品要求对接合适的产区与供应商。'],['产品检验','Product inspection','根据约定要求检查产品。'],['清选与分级','Cleaning & grading','根据产品需要协调清选与分级。'],['样品检查','Sample checks','根据约定产品指标审核样品。'],['装运前审核','Pre-loading review','装运前审核相关准备工作。'],['装运记录','Shipment records','协调装运相关记录。']]
   }
 };
@@ -39,31 +39,80 @@ const products=[
  {id:'speckled',family:'pulses',img:'speckled-beans-card.webp',detailImg:'speckled-beans-detail.webp',en:'Speckled Kidney Beans',zh:'花芸豆',descEn:'Distinctively speckled kidney beans in light-speckled and red-speckled varieties.',descZh:'天然色泽独特的花芸豆，包括浅花芸豆和红花芸豆。',specs:[spec('Botanical name','学名','Phaseolus vulgaris L.'),spec('HS code','海关编码','071333'),spec('Types','品种','LSKB / RSKB','浅花芸豆 / 红花芸豆'),spec('Purity','纯度','98% minimum','最低 98%'),spec('Moisture','水分','14% maximum','最高 14%'),spec('Size','粒度','420–480 beans / 100 g','420–480 粒/100克'),spec('Foreign matter','杂质','0.5% maximum','最高 0.5%')]},
  {id:'olibanum',family:'frankincense',img:'frankincense.webp',en:'Natural Frankincense',zh:'天然乳香',descEn:'Natural aromatic gum-resin collected from Boswellia trees, cleaned, sorted and graded for incense and fragrance applications.',descZh:'采自乳香属树木的天然芳香树脂，经清洁、筛选及分级后，用于香薰及香料相关用途。',specs:[spec('Product','产品','Ethiopian olibanum','埃塞俄比亚乳香树脂'),spec('Source','来源','Boswellia trees','乳香属树木'),spec('Selection','分级依据','Tear size, colour and condition','颗粒大小、颜色及整体状态'),spec('Grade range','等级范围','1A / 1B / 2 / 3'),spec('Applications','应用','Incense, fragrance, aromatic uses','香薰、香料及芳香用途')]}
 ];
+// Approximate regional centres for orientation only, never farm or lot locations.
+const origins=[
+ {en:'Yirgacheffe',zh:'耶加雪菲',x:38,y:73},
+ {en:'Sidama',zh:'西达摩',x:39,y:69},
+ {en:'Guji',zh:'古吉',x:42,y:78},
+ {en:'Harrar',zh:'哈拉尔',x:60,y:49},
+ {en:'Limu',zh:'利姆',x:25,y:60},
+ {en:'Jimma',zh:'吉马',x:29,y:64},
+ {en:'Nekemte / Wellega',zh:'内克姆特 / 沃莱加',x:28,y:51},
+ {en:'Kaffa',zh:'卡法',x:26,y:68}
+];
 let language=new URLSearchParams(location.search).get('lang')==='zh'?'zh':'en';
 let activeFilter='all';
+let activeOrigin=0;
 const $=(s)=>document.querySelector(s);
 const escapeHTML=(s)=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const t=()=>copy[language];
 const languageDescriptions={en:'Enkupanet Agro Trading One Member PLC — Ethiopian-origin sesame, green coffee, pulses and natural frankincense for international buyers.',zh:'Enkupanet Agro Trading One Member PLC — 面向国际采购商的埃塞俄比亚芝麻、生咖啡豆、豆类及天然乳香。'};
 function updateMeta(name,value,attribute='name'){const el=document.querySelector('meta['+attribute+'="'+name+'"]');if(el)el.setAttribute('content',value);}
+function productUrl(id,lang=language){
+ const url=new URL('.',location.href);
+ if(id)url.searchParams.set('product',id);else url.searchParams.delete('product');
+ if(lang==='zh')url.searchParams.set('lang','zh');else url.searchParams.delete('lang');
+ return url;
+}
+function updatePageMeta(){
+ const id=new URLSearchParams(location.search).get('product');
+ const product=products.find(p=>p.id===id);
+ const title=product?`${product[language]} — Enkupanet`:language==='zh'?'Enkupanet — 埃塞俄比亚原产 · 连接全球商机':'Enkupanet — Ethiopian Origin. Global Possibilities.';
+ const description=product?product[language==='zh'?'descZh':'descEn']:languageDescriptions[language];
+ document.title=title;
+ updateMeta('description',description);
+ updateMeta('og:title',title,'property');
+ updateMeta('og:description',description,'property');
+ updateMeta('og:locale',language==='zh'?'zh_CN':'en_US','property');
+ updateMeta('og:url',productUrl(product?.id).href,'property');
+ updateMeta('twitter:title',title);
+ updateMeta('twitter:description',description);
+ const image=new URL('assets/'+(product?.detailImg||product?.img||'green-coffee.webp'),location.href).href;
+ updateMeta('og:image',image,'property');
+ updateMeta('og:image:alt',product?product[language]:'Ethiopian green coffee beans — Enkupanet Agro Trading','property');
+ updateMeta('twitter:image',image);
+ document.querySelector('link[rel="canonical"]').href=productUrl(product?.id).href;
+ document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(link=>{
+  link.href=productUrl(product?.id,link.hreflang==='zh-CN'?'zh':'en').href;
+ });
+}
+function generalInquiryUrl(){
+ const subject=language==='zh'?'Enkupanet 采购咨询':'Enkupanet sourcing inquiry';
+ const body=language==='zh'?[
+  '您好，Enkupanet团队：','','请根据以下需求提供适用产品的供货情况与交易条款。','',
+  '公司名称：','所需产品：','等级或规格：','目的地国家：','预计数量：','联系方式：'
+ ]:[
+  'Hello Enkupanet team,','','Please advise current availability and applicable terms for this requirement.','',
+  'Company:','Product:','Grade or specifications:','Destination country:','Approximate quantity:','Preferred contact:'
+ ];
+ return 'mailto:enkupanet@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body.join('\n'));
+}
 function localize(){
  document.documentElement.lang=language==='zh'?'zh-CN':'en';
- document.title=language==='zh'?'Enkupanet — 埃塞俄比亚原产 · 连接全球商机':'Enkupanet — Ethiopian Origin. Global Possibilities.';
- updateMeta('description',languageDescriptions[language]);
- updateMeta('og:title',document.title,'property');
- updateMeta('og:description',languageDescriptions[language],'property');
- updateMeta('og:locale',language==='zh'?'zh_CN':'en_US','property');
- updateMeta('twitter:title',document.title);
- updateMeta('twitter:description',languageDescriptions[language]);
+ updatePageMeta();
  $('#mobileToggle').setAttribute('aria-label',$('#mobileToggle').getAttribute('aria-expanded')==='true'?t().menuClose:t().menuOpen);
  document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(key in t())el.textContent=t()[key]});
  document.querySelectorAll('[data-i18n-html]').forEach(el=>{const key=el.dataset.i18nHtml;if(key in t())el.innerHTML=t()[key]});
+ $('.catalogue-help-link').href=generalInquiryUrl();
+ $('.partner-inquiry').href=generalInquiryUrl();
  $('#langEn').classList.toggle('active',language==='en');$('#langZh').classList.toggle('active',language==='zh');
  $('#langEn').setAttribute('aria-pressed',language==='en');$('#langZh').setAttribute('aria-pressed',language==='zh');
- renderProducts();renderSteps();
+ $('#productPrev').setAttribute('aria-label',t().previousProducts);
+ $('#productNext').setAttribute('aria-label',t().nextProducts);
+ renderProducts();renderSteps();renderOrigins();
  const d=$('#productDialog');if(d.open&&d.dataset.product)fillDialog(products.find(p=>p.id===d.dataset.product));
 }
-function setLanguage(lang){language=lang;const url=new URL(location.href);if(lang==='en')url.searchParams.delete('lang');else url.searchParams.set('lang','zh');history.replaceState(null,'',url);localize()}
+function setLanguage(lang){language=lang;const url=productUrl(new URLSearchParams(location.search).get('product'),lang);url.hash=location.hash;history.replaceState(null,'',url);localize()}
 function featuredSpec(p){
  const order={sesame:['Purity','Oil content'],coffee:['Processing'],pulses:['Purity'],frankincense:['Grade range']};
  return (order[p.family]||[]).map(name=>p.specs.find(entry=>entry.en===name)).find(Boolean)||p.specs[0];
@@ -77,11 +126,19 @@ function renderProducts(){
  }).join('');
  $('#productGrid').querySelectorAll('[data-product]').forEach(button=>button.addEventListener('click',()=>openProduct(button.dataset.product)));
  $('#filters').querySelectorAll('button').forEach(b=>{b.classList.toggle('active',b.dataset.filter===activeFilter);b.setAttribute('aria-pressed',b.dataset.filter===activeFilter)});
+ $('#productCount').textContent=`${list.length} ${t().productCount}`;
+ $('#productGrid').scrollLeft=0;
  if(premiumMotionObserver) registerMotion('.product-grid .product-card', 70);
 }
+function renderOrigins(){
+ $('#originPins').innerHTML=origins.map((origin,i)=>`<span class="origin-pin${i===activeOrigin?' active':''}" style="--x:${origin.x}%;--y:${origin.y}%" aria-hidden="true">${i+1}</span>`).join('');
+ $('#originList').innerHTML=origins.map((origin,i)=>`<button type="button" data-origin="${i}" aria-pressed="${i===activeOrigin}" class="${i===activeOrigin?'active':''}"><span>${String(i+1).padStart(2,'0')}</span><strong>${escapeHTML(origin[language])}</strong><small>${escapeHTML(origin[language==='en'?'zh':'en'])}</small></button>`).join('');
+ $('#originSelection').textContent=`${t().originSelected}: ${origins[activeOrigin][language]} / ${origins[activeOrigin][language==='en'?'zh':'en']}`;
+}
 function renderSteps(){
- $('#stepsGrid').innerHTML=t().steps.map((s,i)=>`<div class="step"><span class="step-num">0${i+1}</span><div><h3>${escapeHTML(s[0])}</h3><p class="step-cn">${escapeHTML(s[1])}</p><p>${escapeHTML(s[2])}</p></div></div>`).join('');
+ $('#stepsGrid').innerHTML=t().steps.map((s,i)=>`<div class="step" data-step="${i}"><span class="step-num">0${i+1}</span><div><h3>${escapeHTML(s[0])}</h3><p class="step-cn">${escapeHTML(s[1])}</p><p>${escapeHTML(s[2])}</p></div></div>`).join('');
  if(premiumMotionObserver) registerMotion('.steps-grid .step', 70);
+ updateScrollStory();
 }
 function fillDialog(p){
  if(!p)return;
@@ -108,16 +165,50 @@ function fillDialog(p){
  $('#dialogInquiry').href='mailto:enkupanet@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
  $('#dialogInquiryLabel').textContent=t().inquiryButton;
  $('#dialogInquiryNote').textContent=t().inquiryNote;
+ $('#dialogShare').href=productUrl(p.id).href;
+ $('#dialogShare').textContent=t().shareProduct;
 }
-function openProduct(id){const p=products.find(p=>p.id===id);if(!p)return;fillDialog(p);$('#productDialog').showModal();document.body.classList.add('no-scroll')}
+function openProduct(id,updateHistory=true){
+ const p=products.find(p=>p.id===id);if(!p)return;
+ if(updateHistory)history.pushState(null,'',productUrl(id));
+ fillDialog(p);
+ if(!$('#productDialog').open)$('#productDialog').showModal();
+ document.body.classList.add('no-scroll');
+ updatePageMeta();
+}
 function closeProduct(){if($('#productDialog').open)$('#productDialog').close();document.body.classList.remove('no-scroll')}
 function setFilter(value){activeFilter=value;renderProducts()}
 $('#langEn').addEventListener('click',()=>setLanguage('en'));$('#langZh').addEventListener('click',()=>setLanguage('zh'));
 $('#filters').addEventListener('click',ev=>{const button=ev.target.closest('[data-filter]');if(button)setFilter(button.dataset.filter)});
+$('#originList').addEventListener('click',ev=>{const button=ev.target.closest('[data-origin]');if(button){activeOrigin=Number(button.dataset.origin);renderOrigins()}});
+for(const [id,direction] of [['productPrev',-1],['productNext',1]]){
+ $('#'+id).addEventListener('click',()=>{
+  const card=$('#productGrid .product-card');
+  if(card)$('#productGrid').scrollBy({left:direction*(card.getBoundingClientRect().width+17),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+ });
+}
 document.querySelectorAll('[data-family]').forEach(el=>el.addEventListener('click',()=>setFilter(el.dataset.family)));
 $('#dialogClose').addEventListener('click',closeProduct);
-$('#productDialog').addEventListener('close',()=>document.body.classList.remove('no-scroll'));
+$('#productDialog').addEventListener('close',()=>{
+ document.body.classList.remove('no-scroll');
+ if(new URLSearchParams(location.search).has('product'))history.replaceState(null,'',productUrl(null));
+ updatePageMeta();
+});
 $('#productDialog').addEventListener('click',ev=>{if(ev.target===$('#productDialog'))closeProduct()});
+$('#dialogShare').addEventListener('click',async ev=>{
+ if(!navigator.clipboard?.writeText)return;
+ ev.preventDefault();
+ try{
+  await navigator.clipboard.writeText($('#dialogShare').href);
+  $('#dialogShare').textContent=t().linkCopied;
+  setTimeout(()=>{$('#dialogShare').textContent=t().shareProduct},2200);
+ }catch{location.href=$('#dialogShare').href}
+});
+addEventListener('popstate',()=>{
+ const id=new URLSearchParams(location.search).get('product');
+ if(products.some(p=>p.id===id))openProduct(id,false);else closeProduct();
+ updatePageMeta();
+});
 function setMenuOpen(open){
  $('#mainNav').classList.toggle('open',open);
  $('#mobileToggle').setAttribute('aria-expanded',String(open));
@@ -128,6 +219,20 @@ $('#mainNav').querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>se
 document.addEventListener('keydown',ev=>{if(ev.key==='Escape'&&$('#mainNav').classList.contains('open')){setMenuOpen(false);$('#mobileToggle').focus()}});
 document.addEventListener('click',ev=>{if($('#mainNav').classList.contains('open')&&!$('#mainNav').contains(ev.target)&&!$('#mobileToggle').contains(ev.target))setMenuOpen(false)});
 addEventListener('scroll',()=>$('#siteHeader').classList.toggle('scrolled',scrollY>20),{passive:true});
+let scrollFrame=0;
+function updateScrollStory(){
+ const max=document.documentElement.scrollHeight-innerHeight;
+ document.documentElement.style.setProperty('--reading-progress',max>0?String(Math.min(1,scrollY/max)):'0');
+ const steps=[...document.querySelectorAll('#stepsGrid .step')];
+ const target=innerHeight*.45;
+ let nearest=null,distance=Infinity;
+ for(const step of steps){const rect=step.getBoundingClientRect();const delta=Math.abs(rect.top+rect.height/2-target);if(delta<distance){distance=delta;nearest=step}}
+ if(nearest&&$('#approach').getBoundingClientRect().bottom>0&&$('#approach').getBoundingClientRect().top<innerHeight){
+  steps.forEach(step=>step.classList.toggle('current',step===nearest));
+ }
+}
+addEventListener('scroll',()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(()=>{scrollFrame=0;updateScrollStory()})},{passive:true});
+addEventListener('resize',updateScrollStory);
 $('#year').textContent=new Date().getFullYear();
 if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el))}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))}
 
@@ -167,3 +272,6 @@ function initPremiumMotion() {
 
 localize();
 initPremiumMotion();
+const linkedProduct=new URLSearchParams(location.search).get('product');
+if(products.some(p=>p.id===linkedProduct))openProduct(linkedProduct,false);
+updateScrollStory();

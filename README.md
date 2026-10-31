@@ -7,13 +7,15 @@ A premium, responsive English / Simplified Chinese website for **Enkupanet Agro 
 1. **Quickest:** open `index.html` in Chrome, Edge, Firefox, or Safari.
 2. **Local server (optional):** in this folder run `python -m http.server 4173` and open http://localhost:4173 .
 
-There is no build process, package manager, CMS, backend, form, hosting integration, or external dependency.
+There is no build process, package manager, CMS, backend, form, or external dependency. GitHub Actions deploys the static files to GitHub Pages.
 
 ## Files
 
 - `index.html` — semantic page sections and product detail dialog
 - `styles.css` — brand styling, layouts, animations, mobile breakpoints
+- `premium.css` — editorial layout, origin explorer, mobile product rail and sourcing journey
 - `app.js` — language switcher, catalog filtering, product details
+- `robots.txt` and `sitemap.xml` — public discovery for English and Chinese URLs
 - `assets/` — brand mark and optimized product images extracted from the supplied profile
 
 ## Website features
@@ -24,10 +26,15 @@ There is no build process, package manager, CMS, backend, form, hosting integrat
 - Mobile navigation and responsive layouts
 - Company introduction, coffee origins, six-stage quality approach
 - Simple published company email and telephone in footer; no contact form
+- Shareable product details using `?product=humera` (and `?lang=zh` for Chinese)
+- Illustrative, keyboard-accessible Ethiopian coffee origin locator
+- Scroll-guided six-stage sourcing journey and touch-friendly mobile product discovery
 
 ## Source accuracy
 
 Copy and numeric specifications were adapted from the user-supplied `Enkupanet_Premium_Bilingual_Profile_2026.pdf`. Confirm specifications and official contact details before publication. Red kidney, green mung, and speckled kidney bean images were generated for this website and optimized as separate card and detail WebP assets. The remaining illustrative photography originates in the supplied profile. Photo credits are disclosed in the footer (original profile page 20). The brand icon is a web-optimized extraction from the profile cover.
+
+The Ethiopia outline in `assets/ethiopia-outline.svg` is simplified from [Natural Earth 1:110m Admin 0 countries](https://www.naturalearthdata.com/about/terms-of-use/) (public domain). Origin markers are approximate regional orientations only, not farm or current lot locations. Product detail metadata is updated in the browser for deep links; social platforms that do not run JavaScript may show the general site preview.
 
 ## GitHub repository and preview publishing
 
