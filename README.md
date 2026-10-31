@@ -29,6 +29,12 @@ There is no build process, package manager, CMS, backend, form, hosting integrat
 
 Copy and numeric specifications were adapted from the user-supplied `Enkupanet_Premium_Bilingual_Profile_2026.pdf`. Confirm specifications and official contact details before publication. The site's illustrative photography originates in the supplied profile. Photo credits are disclosed in the footer (original profile page 20). The brand icon is a web-optimized extraction from the profile cover.
 
-## GitHub later
+## GitHub repository and preview publishing
 
-When a repository is available, upload all files with the same folder structure. Static hosting can be selected separately at a later stage.
+- Repository: https://github.com/yohannesmulugeta/Enkupanet
+- All source files live in the `main` branch.
+- To activate the GitHub Pages preview, open **Settings → Pages → Build and deployment** and select **GitHub Actions** as the source.
+- Next, open **Actions → Deploy Enkupanet Website → Run workflow** (or re-run the previously failed workflow).
+- Once deployment succeeds, the preview will be available at `https://yohannesmulugeta.github.io/Enkupanet/`.
+
+This is a static prototype/preview. Use hosting suitable for a commercial business before treating it as a production company website.
