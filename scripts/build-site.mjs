@@ -76,6 +76,34 @@ function comparison(product,lang){
  return `<section class="compare-section" aria-labelledby="compare-heading"><div class="detail-wrap"><div class="section-label">${escapeHtml(words.family)} / ${escapeHtml(copy[lang].categories[product.family])}</div><h2 id="compare-heading">${escapeHtml(words.compare)}</h2><p class="compare-hint">${escapeHtml(words.scroll)}</p><div class="compare-scroll" tabindex="0" role="region" aria-label="${escapeHtml(words.compare)}"><table><thead><tr><th scope="col">${escapeHtml(words.specs)}</th>${headers}</tr></thead><tbody>${rows}</tbody></table></div></div></section>`;
 }
 
+function productFooter(lang,homeRelative,rootRelative){
+ const words=copy[lang];
+ return `<footer id="connect">
+    <div class="detail-wrap footer-inner">
+      <div class="footer-topline"><span>ENKUPANET / ETHIOPIA</span><span>${escapeHtml(words.footerProducts)}</span></div>
+      <div class="footer-grid">
+        <div class="footer-main">
+          <div class="footer-brand"><img src="${rootRelative}assets/brand-mark.png" alt="" width="70" height="70"><span>ENKUPANET<small>AGRO TRADING ONE MEMBER PLC</small></span></div>
+          <h2>${words.footerHeading}</h2>
+          <p class="footer-intro">${escapeHtml(words.footerContactIntro)}</p>
+          <a class="footer-email" href="mailto:enkupanet@gmail.com">enkupanet@gmail.com <span aria-hidden="true">↗</span></a>
+          <a class="footer-phone" href="tel:+251913188830">+251 913 188 830</a>
+          <p class="footer-contact-person">Netsanet Frew Temesgen <span>— CEO</span></p>
+        </div>
+        <nav class="footer-directory" aria-labelledby="footerExploreHeading">
+          <h3 id="footerExploreHeading">${escapeHtml(words.footerExplore)}</h3>
+          <a href="${homeRelative}#catalogue">${escapeHtml(words.footerCatalog)}</a>
+          <a href="${homeRelative}#origins">${escapeHtml(words.footerOrigins)}</a>
+          <a href="${homeRelative}#approach">${escapeHtml(words.footerApproach)}</a>
+          <span class="footer-directory-label">${escapeHtml(words.footerProductLabel)}</span>
+          <p>${escapeHtml(words.footerProducts)}</p>
+        </nav>
+      </div>
+      <div class="footer-bottom"><span>© ${new Date().getFullYear()} ENKUPANET AGRO TRADING ONE MEMBER PLC</span><a href="#main">${escapeHtml(words.backToTop)}</a><details class="credits"><summary>${escapeHtml(words.credits)}</summary><p>${escapeHtml(words.creditsText)}</p></details></div>
+    </div>
+  </footer>`;
+}
+
 function productPage(product,lang){
  const words=labels[lang];
  const other=lang==='zh'?'en':'zh';
@@ -117,8 +145,8 @@ function productPage(product,lang){
   <link rel="icon" href="${rootRelative}assets/brand-mark.png" type="image/png" />
   <link rel="preload" href="${rootRelative}assets/${escapeHtml(image)}" as="image" />
   <link rel="stylesheet" href="${rootRelative}styles.css" />
-  <link rel="stylesheet" href="${rootRelative}premium.css" />
-  <link rel="stylesheet" href="${rootRelative}product.css" />
+  <link rel="stylesheet" href="${rootRelative}premium.css?v=20261101footer" />
+  <link rel="stylesheet" href="${rootRelative}product.css?v=20261101footer" />
 </head>
 <body>
   <a class="skip-link" href="#main">${lang==='zh'?'跳转到正文':'Skip to content'}</a>
@@ -131,7 +159,7 @@ function productPage(product,lang){
     ${comparison(product,lang)}
     <section class="related-section detail-wrap"><div class="related-head"><div><span class="section-label">${words.collection}</span><h2>${words.other}</h2></div><a href="${homeRelative}#catalogue">${words.back} ↗</a></div><div class="related-grid">${relatedCards}</div></section>
   </main>
-  <footer class="detail-footer"><div class="detail-wrap"><div><strong>ENKUPANET</strong><span>AGRO TRADING ONE MEMBER PLC</span></div><a href="mailto:enkupanet@gmail.com">enkupanet@gmail.com ↗</a><a href="${homeRelative}#connect">${words.contact}</a><small>© ${new Date().getFullYear()} ENKUPANET</small></div></footer>
+  ${productFooter(lang,homeRelative,rootRelative)}
 </body>
 </html>`;
 }
