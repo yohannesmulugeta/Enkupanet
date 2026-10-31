@@ -68,6 +68,7 @@ function featuredSpec(p){
  const order={sesame:['Purity','Oil content'],coffee:['Processing'],pulses:['Purity'],frankincense:['Grade range']};
  return (order[p.family]||[]).map(name=>p.specs.find(entry=>entry.en===name)).find(Boolean)||p.specs[0];
 }
+let premiumMotionObserver = null;
 function renderProducts(){
  const list=products.filter(p=>activeFilter==='all'||p.family===activeFilter);
  $('#productGrid').innerHTML=list.map(p=>{
@@ -76,9 +77,11 @@ function renderProducts(){
  }).join('');
  $('#productGrid').querySelectorAll('[data-product]').forEach(button=>button.addEventListener('click',()=>openProduct(button.dataset.product)));
  $('#filters').querySelectorAll('button').forEach(b=>{b.classList.toggle('active',b.dataset.filter===activeFilter);b.setAttribute('aria-pressed',b.dataset.filter===activeFilter)});
+ if(premiumMotionObserver) registerMotion('.product-grid .product-card', 70);
 }
 function renderSteps(){
  $('#stepsGrid').innerHTML=t().steps.map((s,i)=>`<div class="step"><span class="step-num">0${i+1}</span><div><h3>${escapeHTML(s[0])}</h3><p class="step-cn">${escapeHTML(s[1])}</p><p>${escapeHTML(s[2])}</p></div></div>`).join('');
+ if(premiumMotionObserver) registerMotion('.steps-grid .step', 70);
 }
 function fillDialog(p){
  if(!p)return;
@@ -127,4 +130,40 @@ document.addEventListener('click',ev=>{if($('#mainNav').classList.contains('open
 addEventListener('scroll',()=>$('#siteHeader').classList.toggle('scrolled',scrollY>20),{passive:true});
 $('#year').textContent=new Date().getFullYear();
 if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el))}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))}
+
+// Progressive enhancement: scroll reveals without new animation dependencies.
+// If motion is disabled, data saving is enabled or IntersectionObserver is
+// unavailable, all content stays visible and fully usable.
+function registerMotion(selector, staggerMs = 0) {
+ if(!premiumMotionObserver) return;
+ document.querySelectorAll(selector).forEach((el, index) => {
+  if(el.dataset.motionBound === 'true') return;
+  el.dataset.motion = 'reveal';
+  el.dataset.motionBound = 'true';
+  el.style.setProperty('--motion-delay', Math.min(index % 6, 5) * staggerMs + 'ms');
+  premiumMotionObserver.observe(el);
+ });
+}
+function initPremiumMotion() {
+ const reduced = typeof window.matchMedia === 'function'
+  && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const saveData = Boolean(window.navigator && window.navigator.connection && window.navigator.connection.saveData);
+ if(reduced || saveData || !('IntersectionObserver' in window)) return;
+
+ premiumMotionObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+   if(!entry.isIntersecting) return;
+   entry.target.classList.add('is-in-view');
+   premiumMotionObserver.unobserve(entry.target);
+  });
+ }, {threshold: .08, rootMargin: '0px 0px -5% 0px'});
+
+ registerMotion('.section-intro, .catalogue-top, .catalogue-help, .story-content-inner, .coffee-copy, .origins-panel, .approach-header, .partner-section, .footer-main');
+ registerMotion('.category-showcase .feature-card', 95);
+ registerMotion('.product-grid .product-card', 70);
+ registerMotion('.steps-grid .step', 75);
+ document.documentElement.classList.add('motion-ready');
+}
+
 localize();
+initPremiumMotion();
