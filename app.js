@@ -97,11 +97,11 @@ function fillDialog(p){
   '您好，Enkupanet团队：','','我想咨询以下产品：'+p.en+' ('+p.zh+')。',
   '请提供最新供货情况、适用规格、包装方式、最小起订量及运输条款。','',
   '公司名称：','目的地国家：','预计数量：','联系方式：'
- ].join('\\n'):[
+ ].join('\n'):[
   'Hello Enkupanet team,','','I would like to inquire about: '+p.en+'.',
   'Please advise current availability, applicable specifications, packing options, minimum order quantity and shipment terms.','',
   'Company:','Destination country:','Approximate quantity:','Preferred contact:'
- ].join('\\n');
+ ].join('\n');
  $('#dialogInquiry').href='mailto:enkupanet@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
  $('#dialogInquiryLabel').textContent=t().inquiryButton;
  $('#dialogInquiryNote').textContent=t().inquiryNote;
