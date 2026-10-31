@@ -27,7 +27,7 @@ There is no build process, package manager, CMS, backend, form, hosting integrat
 
 ## Source accuracy
 
-Copy and numeric specifications were adapted from the user-supplied `Enkupanet_Premium_Bilingual_Profile_2026.pdf`. Confirm specifications and official contact details before publication. The site's illustrative photography originates in the supplied profile. Photo credits are disclosed in the footer (original profile page 20). The brand icon is a web-optimized extraction from the profile cover.
+Copy and numeric specifications were adapted from the user-supplied `Enkupanet_Premium_Bilingual_Profile_2026.pdf`. Confirm specifications and official contact details before publication. Red kidney, green mung, and speckled kidney bean images were generated for this website and optimized as separate card and detail WebP assets. The remaining illustrative photography originates in the supplied profile. Photo credits are disclosed in the footer (original profile page 20). The brand icon is a web-optimized extraction from the profile cover.
 
 ## GitHub repository and preview publishing
 
