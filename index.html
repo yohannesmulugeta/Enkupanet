@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#123e2f" />
+  <meta name="theme-color" content="#0E752C" />
   <meta name="description" content="Enkupanet Agro Trading One Member PLC — Ethiopian-origin sesame, green coffee, pulses and natural frankincense for international buyers." />
   <title>Enkupanet — Ethiopian Origin. Global Possibilities.</title>
   <link rel="canonical" href="https://yohannesmulugeta.github.io/Enkupanet/" />
@@ -36,7 +36,7 @@
   </script>
   <link rel="icon" href="assets/brand-mark.png" type="image/png" />
   <link rel="preload" href="assets/green-coffee.webp" as="image" />
-  <link rel="stylesheet" href="styles.css?v=20261031b" />
+  <link rel="stylesheet" href="styles.css?v=20261031emerald" />
   <style id="enkupanet-ux-styles">
 /* Enkupanet — buyer-focused visual refinements, layered over the original design. */
 :root { --focus-ring: #b48b3c; }
@@ -426,6 +426,47 @@ html:lang(zh-CN) .hero h1 em { font-style: normal; }
   .feature-card::after,
   .hero-actions a span[aria-hidden="true"] {
     transition: none !important;
+  }
+}
+
+/* Enkupanet brand green — sampled from supplied logo reference (#0E752C).
+   Existing gold, cream, layout, imagery, and motion remain unchanged. */
+:root {
+  --green: #0E752C;
+  --green-dark: #075522;
+}
+.topline, .hero, .hero-copy, .story-content { background-color: var(--green); }
+.approach-section { background-color: #0B682B; }
+footer { background-color: #075222; }
+
+/* Retain gold as the accent; lighten small text over the brighter brand green
+   so international buyers can still read it clearly. */
+.topline, .topline-right,
+.hero .eyebrow-light, .hero-chinese,
+.hero-index, .hero-index-total, .hero-index .index-caption {
+  color: #FFF0C9;
+}
+.hero-desc, .story-section p, .approach-header > p, .step p {
+  color: #F3F7EF;
+}
+.story-section h2 em, .story-section .values,
+.step .step-cn, .step .step-num {
+  color: #FFF0C9;
+}
+.hero .hero-index .index-line,
+.hero .eyebrow-line { background-color: var(--gold); }
+
+/* Green photo treatment and tactile controls use the same emerald family. */
+.feature-wash {
+  background: linear-gradient(to top, rgba(4,72,26,.85), rgba(8,88,35,.08) 60%);
+}
+.nav-contact:hover, .catalogue-help-link:hover,
+.partner-inquiry:hover, .dialog-inquiry:hover {
+  background-color: #086026;
+}
+@media (prefers-contrast: more) {
+  .hero-desc, .story-section p, .approach-header > p, .step p {
+    color: #FFFFFF;
   }
 }
   </style>
