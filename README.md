@@ -25,6 +25,6 @@ Each product has a direct English URL such as `/products/humera/` and a Chinese 
 
 ## Source notes
 
-Product copy and numeric specifications were adapted from `Enkupanet_Premium_Bilingual_Profile_2026.pdf`. The owner should reconfirm specifications, availability, terms and contact details for current trading. Red kidney, green mung and speckled kidney bean images were generated for this website; remaining illustrative photography comes from the supplied profile. Credits are disclosed in the footer. The brand icon was extracted from the profile cover.
+Product copy and numeric specifications were adapted from `Enkupanet_Premium_Bilingual_Profile_2026.pdf`. The owner should reconfirm specifications, availability, terms and contact details for current trading. Red kidney, green mung, white pea and speckled kidney bean images were generated for this website; other product photography comes from the supplied profile. The story photograph is a modified version of [Lemazelalem3's Ethiopian farmland photograph](https://commons.wikimedia.org/wiki/File:Beautiful_green_farm_land_in_Eastern_Ethiopia.jpg), licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Credits are disclosed in the footer. The brand icon was extracted from the profile cover.
 
 The Ethiopia outline in `assets/ethiopia-outline.svg` is simplified from [Natural Earth 1:110m Admin 0 countries](https://www.naturalearthdata.com/about/terms-of-use/) (public domain). Origin markers give approximate regional orientation and do not identify farms or current lots.
