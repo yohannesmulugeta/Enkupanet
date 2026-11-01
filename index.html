@@ -53,11 +53,15 @@
       </a>
       <button type="button" class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu"><span></span><span></span></button>
       <nav class="main-nav" id="mainNav" aria-label="Main navigation">
-        <a href="#home" data-i18n="navHome">Home</a>
-        <a href="#collection" data-i18n="navCollection">Our Collection</a>
-        <a href="#about" data-i18n="navAbout">Our Story</a>
-        <a href="#approach" data-i18n="navApproach">Our Approach</a>
-        <a href="#connect" class="mobile-nav-contact" data-i18n="navContact">Get in touch</a>
+        <div class="nav-panel-head" aria-hidden="true"><span data-i18n="menuEyebrow">EXPLORE ENKUPANET</span><span>01 — 04</span></div>
+        <a href="#home"><span class="nav-number" aria-hidden="true">01</span><span data-i18n="navHome">Home</span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+        <a href="#collection"><span class="nav-number" aria-hidden="true">02</span><span data-i18n="navCollection">Our Collection</span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+        <a href="#about"><span class="nav-number" aria-hidden="true">03</span><span data-i18n="navAbout">Our Story</span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+        <a href="#approach"><span class="nav-number" aria-hidden="true">04</span><span data-i18n="navApproach">Our Approach</span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+        <div class="nav-panel-foot">
+          <div class="nav-panel-note"><span data-i18n="menuFootEyebrow">ETHIOPIAN ORIGIN</span><p data-i18n="menuFootText">Selected with purpose. Connected to the world.</p></div>
+          <a href="#connect" class="mobile-nav-contact"><span data-i18n="navContact">Get in touch</span><span aria-hidden="true">↗</span></a>
+        </div>
       </nav>
       <div class="nav-end">
         <div class="lang-switch" role="group" aria-label="Language / 语言"><button id="langEn" type="button" class="active" aria-pressed="true">EN</button><span>/</span><button id="langZh" type="button" aria-pressed="false">中文</button></div>
@@ -162,7 +166,7 @@
             <p data-i18n="footerProducts">SESAME · COFFEE · PULSES · FRANKINCENSE</p>
           </nav>
         </div>
-        <div class="footer-bottom"><span>© <span id="year">2026</span> ENKUPANET AGRO TRADING ONE MEMBER PLC</span><a href="#home" data-i18n="backToTop">BACK TO TOP ↑</a><details class="credits"><summary data-i18n="credits">Image credits</summary><p data-i18n="creditsText">Red kidney, green mung, white pea bean, and speckled kidney bean imagery was generated for this website. Other product imagery comes from the supplied Enkupanet company profile. Original profile credits: cottonbro studio, Vie Studio, Anna Tarazevich, Sonika Agarwal, Marina Leonova / Pexels; Michael Allen Smith / CC BY-SA 2.0; USDA AMS, SeedImages / public domain; Lupus in Saxonia / CC BY-SA 4.0. See the profile for full licensing details.</p><p>Farm photo / 农田照片: <a href="https://commons.wikimedia.org/wiki/File:Beautiful_green_farm_land_in_Eastern_Ethiopia.jpg">Lemazelalem3 / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · cropped, resized and adjusted / 已裁剪、调整尺寸及调色.</p></details></div>
+        <div class="footer-bottom"><span>© <span id="year">2026</span> ENKUPANET AGRO TRADING ONE MEMBER PLC</span><a href="#home" data-i18n="backToTop">BACK TO TOP ↑</a><a class="footer-credits-link" href="image-credits.html" data-i18n="creditsLink">Credits &amp; attribution</a></div>
       </div>
     </footer>
   <dialog class="product-dialog" id="productDialog" aria-labelledby="dialogTitle"><button class="dialog-close" type="button" id="dialogClose" aria-label="Close product details">×</button><div class="dialog-image"><img id="dialogImage" src="" alt=""/></div><div class="dialog-info"><span class="dialog-kicker" id="dialogCategory"></span><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><div class="dialog-spec-title" id="dialogSpecHeading">PRODUCT DETAILS</div><div class="dialog-specs" id="dialogSpecs"></div><p class="dialog-note" id="dialogNote"></p><div class="dialog-actions"><a class="dialog-inquiry" id="dialogInquiry" href="mailto:enkupanet@gmail.com"><span id="dialogInquiryLabel">Request this product</span><span aria-hidden="true">↗</span></a><a class="dialog-full" id="dialogFull" href="#catalogue">View full product page</a><a class="dialog-share" id="dialogShare" href="#catalogue" data-i18n="shareProduct">Copy product link</a><p class="dialog-inquiry-note" id="dialogInquiryNote">Your email will include the selected product name.</p></div></div></dialog>

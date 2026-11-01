@@ -155,11 +155,15 @@ addEventListener('popstate',()=>{
  updatePageMeta();
 });
 function setMenuOpen(open){
- $('#mainNav').classList.toggle('open',open);
- $('#mobileToggle').setAttribute('aria-expanded',String(open));
- $('#mobileToggle').setAttribute('aria-label',open?t().menuClose:t().menuOpen);
+  const mobile=matchMedia('(max-width: 920px)').matches;
+  const active=Boolean(open && mobile);
+  $('#mainNav').classList.toggle('open',active);
+  document.body.classList.toggle('menu-open',active);
+  $('#mobileToggle').setAttribute('aria-expanded',String(active));
+  $('#mobileToggle').setAttribute('aria-label',active?t().menuClose:t().menuOpen);
 }
 $('#mobileToggle').addEventListener('click',()=>setMenuOpen(!$('#mainNav').classList.contains('open')));
+matchMedia('(min-width: 921px)').addEventListener('change',()=>setMenuOpen(false));
 $('#mainNav').querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenuOpen(false)));
 document.addEventListener('keydown',ev=>{if(ev.key==='Escape'&&$('#mainNav').classList.contains('open')){setMenuOpen(false);$('#mobileToggle').focus()}});
 document.addEventListener('click',ev=>{if($('#mainNav').classList.contains('open')&&!$('#mainNav').contains(ev.target)&&!$('#mobileToggle').contains(ev.target))setMenuOpen(false)});
