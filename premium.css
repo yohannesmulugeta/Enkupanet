@@ -594,3 +594,64 @@ footer{padding:0 0 27px;background:#075222}
 }
 @keyframes enk-menu-drop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.site-header .main-nav.open{animation:none}}
+
+/* Mobile-only visual navigation enhancement: no decorative words or numbers. */
+@media(max-width:920px){
+  .site-header .main-nav.open{
+    padding-bottom:calc(23px + env(safe-area-inset-bottom,0px));
+    box-shadow:0 22px 44px rgba(7,35,17,.22);
+    border-bottom:1px solid rgba(13,65,28,.14);
+  }
+  .site-header .main-nav.open>a:not(.mobile-nav-contact){
+    font-size:clamp(23px,5.35vw,28px);
+    min-height:64px;
+    letter-spacing:-.012em;
+    transition:color .2s ease,transform .2s ease;
+  }
+  .site-header .main-nav.open>a:not(.mobile-nav-contact):is(:hover,:focus-visible){
+    color:#0e752c;
+    transform:translateX(4px);
+  }
+  .site-header .main-nav.open::after{
+    content:"";
+    display:block;
+    flex:none;
+    order:1;
+    height:clamp(92px,18vw,132px);
+    width:100%;
+    margin-top:19px;
+    border-radius:2px;
+    background-image:linear-gradient(90deg,rgba(6,52,25,.15),rgba(6,52,25,.02) 58%,rgba(6,52,25,.18)),url("assets/green-coffee.webp");
+    background-size:cover;
+    background-position:center 50%;
+    box-shadow:inset 0 0 0 1px rgba(10,53,27,.10);
+    pointer-events:none;
+  }
+  .site-header .main-nav.open .mobile-nav-contact{
+    order:2;
+    margin-top:16px!important;
+    min-height:55px;
+    border-radius:2px;
+    transition:background-color .2s ease,box-shadow .2s ease;
+  }
+  .site-header .main-nav.open .mobile-nav-contact:is(:hover,:focus-visible){
+    background:#075522;
+    box-shadow:0 6px 20px rgba(7,67,31,.18);
+  }
+  .site-header .mobile-toggle[aria-expanded="true"]{
+    background:rgba(14,117,44,.07);
+    border-radius:50%;
+  }
+}
+@media(max-width:640px){
+  .site-header .main-nav.open>a:not(.mobile-nav-contact){min-height:61px}
+  .site-header .main-nav.open::after{height:clamp(92px,24vw,112px);margin-top:17px}
+}
+@media(max-height:540px) and (max-width:920px){
+  .site-header .main-nav.open::after{height:68px}
+  .site-header .main-nav.open>a:not(.mobile-nav-contact){min-height:52px}
+}
+@media(prefers-reduced-motion:reduce){
+  .site-header .main-nav.open>a:not(.mobile-nav-contact),
+  .site-header .main-nav.open .mobile-nav-contact{transition:none}
+}
