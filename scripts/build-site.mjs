@@ -5,7 +5,7 @@ import {fileURLToPath} from 'node:url';
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const output=resolve(root,'_site');
-const site='https://yohannesmulugeta.github.io/Enkupanet/';
+const site='https://enkupanetagrotrading.com/';
 const {copy,products,metadata,productInquiryUrl}=createRequire(import.meta.url)(join(root,'site-data.js'));
 const escapeHtml=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const pageUrl=(product,lang)=>site+(lang==='zh'?'zh/':'')+(product?`products/${product.id}/`:'');
