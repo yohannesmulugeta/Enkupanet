@@ -56,6 +56,7 @@ function renderHome(source,lang){
  let html=replaceMeta(localizeSource(source,lang),lang);
  html=html.replace('<div class="product-grid" id="productGrid"></div>',`<div class="product-grid" id="productGrid">${products.map(product=>renderCard(product,lang)).join('')}</div>`);
  if(lang==='zh'){
+  html=html.replace('href="image-credits.html"','href="../image-credits.html"');
   html=html.replace(/(href|src)="(assets\/|styles\.css|premium\.css|site-data\.js|app\.js)/g,'$1="../$2');
   html=html.replace('aria-label="Enkupanet Home"','aria-label="Enkupanet 首页"');
  }
@@ -99,7 +100,7 @@ function productFooter(lang,homeRelative,rootRelative){
           <p>${escapeHtml(words.footerProducts)}</p>
         </nav>
       </div>
-      <div class="footer-bottom"><span>© ${new Date().getFullYear()} ENKUPANET AGRO TRADING ONE MEMBER PLC</span><a href="#main">${escapeHtml(words.backToTop)}</a><details class="credits"><summary>${escapeHtml(words.credits)}</summary><p>${escapeHtml(words.creditsText)}</p><p>Farm photo / 农田照片: <a href="https://commons.wikimedia.org/wiki/File:Beautiful_green_farm_land_in_Eastern_Ethiopia.jpg">Lemazelalem3 / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · cropped, resized and adjusted / 已裁剪、调整尺寸及调色.</p></details></div>
+      <div class="footer-bottom"><span>© ${new Date().getFullYear()} ENKUPANET AGRO TRADING ONE MEMBER PLC</span><a href="#main">${escapeHtml(words.backToTop)}</a><a class="footer-credits-link" href="${rootRelative}image-credits.html">${escapeHtml(words.creditsLink)}</a></div>
     </div>
   </footer>`;
 }
@@ -185,7 +186,7 @@ async function build(){
   const source=join(root,'assets',name);
   if((await stat(source)).isFile())await copyFile(source,join(output,'assets',name));
  }
- for(const name of ['styles.css','premium.css','product.css','app.js','site-data.js','robots.txt','sitemap.xml'])await copyFile(join(root,name),join(output,name));
+ for(const name of ['styles.css','premium.css','product.css','app.js','site-data.js','robots.txt','sitemap.xml','image-credits.html'])await copyFile(join(root,name),join(output,name));
  await writeFile(join(output,'.nojekyll'),'');
  const source=await readFile(join(root,'index.html'),'utf8');
  await writeOutput('index.html',renderHome(source,'en'));
