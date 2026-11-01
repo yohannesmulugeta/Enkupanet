@@ -37,14 +37,14 @@
   <link rel="icon" href="assets/brand-mark.png" type="image/png" />
   <link rel="preload" href="assets/green-coffee.webp" as="image" />
   <link rel="stylesheet" href="styles.css?v=20261031emerald" />
-  <link rel="stylesheet" href="premium.css?v=20261101footer" />
+  <link rel="stylesheet" href="premium.css?v=20261101a11y" />
   <script src="site-data.js?v=20261101images" defer></script>
   <script src="app.js?v=20261101" defer></script>
 </head>
 <body>
   <div class="reading-progress" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="topline"><span data-i18n="topline">ETHIOPIAN AGRICULTURAL ORIGIN · INTERNATIONAL TRADE</span><span class="topline-right">ENKUPANET / 2026</span></div>
+  <div class="topline" aria-hidden="true"><span data-i18n="topline">ETHIOPIAN AGRICULTURAL ORIGIN · INTERNATIONAL TRADE</span><span class="topline-right">ENKUPANET / 2026</span></div>
   <header class="site-header" id="siteHeader">
     <div class="wrap nav-layout">
       <a class="brand" href="#home" aria-label="Enkupanet Home">
@@ -60,7 +60,7 @@
         <a href="#connect" class="mobile-nav-contact" data-i18n="navContact">Get in touch</a>
       </nav>
       <div class="nav-end">
-        <div class="lang-switch" aria-label="Choose language"><button id="langEn" type="button" class="active" aria-pressed="true">EN</button><span>/</span><button id="langZh" type="button" aria-pressed="false">中文</button></div>
+        <div class="lang-switch" role="group" aria-label="Language / 语言"><button id="langEn" type="button" class="active" aria-pressed="true">EN</button><span>/</span><button id="langZh" type="button" aria-pressed="false">中文</button></div>
         <a href="#connect" class="nav-contact"><span data-i18n="navContact">Get in touch</span><span aria-hidden="true">↗</span></a>
       </div>
     </div>
@@ -89,7 +89,7 @@
       </div>
     </section>
 
-    <div class="commodity-bar" aria-label="Product categories"><span>SESAME <b>·</b> 芝麻</span><i></i><span>GREEN COFFEE <b>·</b> 生咖啡豆</span><i></i><span>PULSES <b>·</b> 豆类</span><i></i><span>FRANKINCENSE <b>·</b> 乳香</span></div>
+    <div class="commodity-bar" aria-hidden="true"><span>SESAME <b>·</b> 芝麻</span><i></i><span>GREEN COFFEE <b>·</b> 生咖啡豆</span><i></i><span>PULSES <b>·</b> 豆类</span><i></i><span>FRANKINCENSE <b>·</b> 乳香</span></div>
 
     <section class="section-intro wrap reveal" id="collection">
       <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="collectionEyebrow">01 / THE COLLECTION</span></div>
@@ -140,7 +140,8 @@
 
     <section class="partner-section wrap reveal" id="partnership"><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="partnerEyebrow">04 / GLOBAL PARTNERSHIPS</span></div><div class="partner-grid"><h2 data-i18n-html="partnerHeading">From Ethiopia.<br><em>For the world.</em></h2><div><p data-i18n="partnerDesc">We welcome importers, processors, traders and food-industry buyers to discuss trial orders, regular supply programmes and longer-term sourcing cooperation.</p><span class="partner-accent" data-i18n="partnerAccent">LET'S BUILD THE RIGHT SUPPLY CONVERSATION.</span><a class="partner-inquiry" href="#connect"><span data-i18n="partnerCta">Start a sourcing conversation</span><span aria-hidden="true">↗</span></a></div></div></section>
 
-    <footer id="connect">
+  </main>
+  <footer id="connect">
       <div class="wrap footer-inner">
         <div class="footer-topline"><span>ENKUPANET / ETHIOPIA</span><span data-i18n="footerProducts">SESAME · COFFEE · PULSES · FRANKINCENSE</span></div>
         <div class="footer-grid">
@@ -164,7 +165,6 @@
         <div class="footer-bottom"><span>© <span id="year">2026</span> ENKUPANET AGRO TRADING ONE MEMBER PLC</span><a href="#home" data-i18n="backToTop">BACK TO TOP ↑</a><details class="credits"><summary data-i18n="credits">Image credits</summary><p data-i18n="creditsText">Red kidney, green mung, white pea bean, and speckled kidney bean imagery was generated for this website. Other product imagery comes from the supplied Enkupanet company profile. Original profile credits: cottonbro studio, Vie Studio, Anna Tarazevich, Sonika Agarwal, Marina Leonova / Pexels; Michael Allen Smith / CC BY-SA 2.0; USDA AMS, SeedImages / public domain; Lupus in Saxonia / CC BY-SA 4.0. See the profile for full licensing details.</p><p>Farm photo / 农田照片: <a href="https://commons.wikimedia.org/wiki/File:Beautiful_green_farm_land_in_Eastern_Ethiopia.jpg">Lemazelalem3 / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · cropped, resized and adjusted / 已裁剪、调整尺寸及调色.</p></details></div>
       </div>
     </footer>
-  </main>
   <dialog class="product-dialog" id="productDialog" aria-labelledby="dialogTitle"><button class="dialog-close" type="button" id="dialogClose" aria-label="Close product details">×</button><div class="dialog-image"><img id="dialogImage" src="" alt=""/></div><div class="dialog-info"><span class="dialog-kicker" id="dialogCategory"></span><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><div class="dialog-spec-title" id="dialogSpecHeading">PRODUCT DETAILS</div><div class="dialog-specs" id="dialogSpecs"></div><p class="dialog-note" id="dialogNote"></p><div class="dialog-actions"><a class="dialog-inquiry" id="dialogInquiry" href="mailto:enkupanet@gmail.com"><span id="dialogInquiryLabel">Request this product</span><span aria-hidden="true">↗</span></a><a class="dialog-full" id="dialogFull" href="#catalogue">View full product page</a><a class="dialog-share" id="dialogShare" href="#catalogue" data-i18n="shareProduct">Copy product link</a><p class="dialog-inquiry-note" id="dialogInquiryNote">Your email will include the selected product name.</p></div></div></dialog>
 </body>
 </html>

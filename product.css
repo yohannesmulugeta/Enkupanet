@@ -72,3 +72,13 @@
 @media(max-width:600px){.detail-wrap{width:calc(100% - 34px)}.detail-header{height:68px}.detail-nav{gap:8px}.detail-nav .brand img{width:36px;height:36px}.detail-nav .brand-copy strong{font-size:15px}.detail-nav .brand-copy small{font-size:8px}.detail-languages{gap:5px;font-size:11px}.detail-hero-copy{padding:58px 0 55px}.detail-hero h1{font-size:clamp(43px,11vw,58px)}.detail-hero .detail-lede{font-size:14px}.detail-highlights{margin-top:28px}.detail-highlights>div{padding-right:9px}.detail-highlights dd{font-size:11px}.detail-photo{height:300px}.detail-photo::after{inset:10px}.detail-photo>span{left:20px;bottom:20px}.detail-hero-actions{align-items:stretch;flex-direction:column}.detail-primary{width:100%}.detail-text-link{align-self:flex-start}.detail-content{padding-block:75px 85px}.detail-inquiry{padding:27px 22px}.compare-section{padding-block:72px 85px}.compare-scroll{margin-right:-17px}.related-section{padding-block:75px 85px}.related-head{display:block}.related-head>a{display:inline-block;margin-top:18px}.related-grid{grid-template-columns:1fr;gap:15px}.related-card{display:grid;grid-template-columns:120px 1fr;grid-template-rows:1fr auto auto;min-height:120px;padding:0 10px 0 0}.related-card img{grid-row:1/4;width:120px;height:120px}.related-card span{padding:17px 10px 0}.related-card strong{font-size:21px;padding:3px 10px 0}.related-card small{padding:3px 10px 13px}}
 @media(max-width:360px){.detail-nav .brand-copy small{display:none}.detail-nav .brand-copy strong{font-size:12px}.detail-languages{gap:3px}.detail-highlights{grid-template-columns:1fr 1fr}.detail-highlights>div{padding-top:14px}.detail-hero h1{font-size:42px}}
 @media(prefers-reduced-motion:reduce){.detail-primary,.related-card{transition:none}.detail-primary:hover,.related-card:hover{transform:none}}
+
+/* Product-page text uses the same readable variants as the homepage. */
+.detail-languages, .detail-specifications th, .compare-hint,
+.unlisted, .related-card small { color: var(--muted); }
+.detail-languages a { min-width: 28px; justify-content: center; }
+.section-label, .related-card span { color: var(--gold-text); }
+.detail-translation, .compare-scroll thead a[aria-current=page] {
+  color: var(--gold-on-green);
+}
+.detail-hero :where(a, button):focus-visible { --focus-ring: var(--gold-on-green); }
