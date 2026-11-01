@@ -655,3 +655,28 @@ footer{padding:0 0 27px;background:#075222}
   .site-header .main-nav.open>a:not(.mobile-nav-contact),
   .site-header .main-nav.open .mobile-nav-contact{transition:none}
 }
+
+/* Direct buyer communications: a restrained two-platform contact block. */
+.messaging-section{margin-top:42px;max-width:720px}
+.messaging-heading{margin-bottom:20px}
+.messaging-overline{font:750 10px/1.4 var(--sans);color:#edcf8f;letter-spacing:.13em}
+.messaging-heading h3{font:400 clamp(26px,3.5vw,37px)/1.17 var(--serif);margin:9px 0;color:#fff;letter-spacing:-.025em}
+.messaging-heading p{max-width:480px;font-size:13px;line-height:1.65;color:#cfddd2}
+.messaging-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.messaging-card{min-width:0;padding:18px;background:#f8f6ef;color:#173b29;display:flex;flex-direction:column;align-items:stretch;border:1px solid #d8d8ca}
+.messaging-card-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid #dcded2;padding-bottom:12px;margin-bottom:14px}
+.messaging-platform{font:750 14px/1.3 var(--sans)}
+.messaging-platform-mark{font-size:19px;color:#0e752c}
+.messaging-qr{display:grid;place-items:center;align-self:center;background:#fff;border:1px solid #e7e8e0;padding:10px;width:min(100%,200px);aspect-ratio:1;line-height:0}
+.messaging-qr img{width:100%;height:100%;object-fit:contain;image-rendering:crisp-edges}
+.messaging-qr-open:hover{border-color:#0e752c}
+.messaging-card p{color:#546559;font-size:11px;line-height:1.65;margin:13px 0 15px;flex:1}
+.messaging-action{display:flex;align-items:center;justify-content:space-between;gap:9px;min-height:48px;padding:12px 13px;background:#0e752c;color:white;font:750 11px/1.35 var(--sans);transition:background .2s}
+.messaging-action span:last-child{font-size:18px}
+.messaging-action:hover{background:#075522}
+.messaging-action-outline{background:#e4eade;color:#16482c;border:1px solid #b0c2b2}
+.messaging-action-outline:hover{background:#d4e0d3}
+@media(max-width:920px){.messaging-section{max-width:760px}}
+@media(max-width:640px){.messaging-section{margin-top:34px}.messaging-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.messaging-card{padding:12px}.messaging-qr{padding:6px}.messaging-card p{font-size:10px;margin:10px 0 13px}.messaging-platform{font-size:12px}.messaging-action{padding:9px 10px;min-height:46px;font-size:10px}.messaging-heading h3{font-size:30px}}
+@media(max-width:380px){.messaging-grid{grid-template-columns:1fr;gap:13px}.messaging-card{padding:18px}.messaging-qr{max-width:190px}.messaging-platform{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.messaging-action{transition:none}}
