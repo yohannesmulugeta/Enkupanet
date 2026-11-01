@@ -1,6 +1,6 @@
 # Enkupanet website
 
-A bilingual, static website for Enkupanet Agro Trading One Member PLC, based on the supplied 2026 company profile. The public preview is at [GitHub Pages](https://yohannesmulugeta.github.io/Enkupanet/).
+A bilingual, static website for Enkupanet Agro Trading One Member PLC, based on the supplied 2026 company profile. The public preview is at [GitHub Pages](https://enkupanetagrotrading.com/).
 
 ## Preview and publish
 
