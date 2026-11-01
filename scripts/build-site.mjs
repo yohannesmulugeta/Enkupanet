@@ -90,6 +90,13 @@ function productFooter(lang,homeRelative,rootRelative){
           <a class="footer-email" href="mailto:enkupanet@gmail.com">enkupanet@gmail.com <span aria-hidden="true">↗</span></a>
           <a class="footer-phone" href="tel:+251913188830">+251 913 188 830</a>
           <p class="footer-contact-person">Netsanet Frew Temesgen <span>— CEO</span></p>
+<section class="messaging-section" aria-label="${escapeHtml(words.messagingTitle)}">
+          <div class="messaging-heading"><span class="messaging-overline">${escapeHtml(words.messagingEyebrow)}</span><h3>${escapeHtml(words.messagingTitle)}</h3><p>${escapeHtml(words.messagingIntro)}</p></div>
+          <div class="messaging-grid">
+            <article class="messaging-card"><div class="messaging-card-heading"><span class="messaging-platform">WhatsApp</span><span class="messaging-platform-mark" aria-hidden="true">↗</span></div><div class="messaging-qr"><img src="${rootRelative}assets/whatsapp-contact.svg" width="192" height="192" loading="lazy" alt="WhatsApp contact QR code"></div><p>${escapeHtml(words.whatsappHint)}</p><a class="messaging-action" href="https://wa.me/message/D5NRESKHXRZYG1?src=qr" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(words.whatsappAction)}</span><span aria-hidden="true">↗</span></a></article>
+            <article class="messaging-card"><div class="messaging-card-heading"><span class="messaging-platform">WeChat / 微信</span><span class="messaging-platform-mark" aria-hidden="true">⌗</span></div><a class="messaging-qr messaging-qr-open" href="${rootRelative}assets/wechat-contact.svg" target="_blank" rel="noopener noreferrer"><img src="${rootRelative}assets/wechat-contact.svg" width="192" height="192" loading="lazy" alt="WeChat contact QR code"></a><p>${escapeHtml(words.wechatHint)}</p><a class="messaging-action messaging-action-outline" href="${rootRelative}assets/wechat-contact.svg" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(words.wechatAction)}</span><span aria-hidden="true">↗</span></a></article>
+          </div>
+        </section>
         </div>
         <nav class="footer-directory" aria-labelledby="footerExploreHeading">
           <h3 id="footerExploreHeading">${escapeHtml(words.footerExplore)}</h3>
